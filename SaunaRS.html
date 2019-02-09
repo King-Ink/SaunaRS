@@ -1,0 +1,1089 @@
+<meta charset="UTF-8">
+
+<title>Saunauna</title>
+
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  font-size: 200%;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  font-size: 75%;
+  text-align: center;
+}
+
+
+
+html{
+
+    border: 10px solid green;
+
+    background-color: black;
+
+    color : white;
+
+    width: 815px;
+
+    font-size: 100%;
+
+    line-height: 100%;
+    font-family: Arial;
+    } 
+
+.slider {
+
+  -webkit-appearance: none;
+
+  width: 100%;
+
+  height: 25px;
+
+  border-radius: 5px; 
+
+  background: #d3d3d3;
+
+  outline: none;
+
+  opatab: 0.7;
+
+  -webkit-transition: .2s;
+
+  transition: opatab .2s;
+
+}
+
+
+
+.slider::-webkit-slider-thumb {
+
+  -webkit-appearance: none;
+
+  appearance: none;
+
+  width: 25px;
+
+  height: 25px;
+
+  border-radius: 50%;
+
+  background: #4CAF50;
+
+  cursor: pointer;
+
+}
+
+
+
+.slider::-moz-range-thumb {
+
+  width: 25px;
+
+  height: 25px;
+
+  border-radius: 50%;
+
+  background: #4CAF50;
+
+  cursor: pointer;
+
+}
+
+
+
+.butt:hover {
+
+  background-color: #4CAF50; /* Green */
+
+  color: white;
+
+}
+
+.butt3:hover {
+
+  background-color: orange; /* Green */
+
+  color: white;
+
+}
+    .button{
+
+     border: 5px solid #DFDF50;/ Yellow
+	 
+     font-size: 200%;
+
+  color : black;
+
+  text-align: center;
+
+  border-radius: 25%;
+
+  width: 8%;
+
+  vertical-align: middle;
+
+
+  }  
+  .text{
+
+     border: 5px solid black;/ Yellow
+	 
+     font-size: 150%;
+
+  color : black;
+
+  text-align: center;
+
+  border-radius: 1%;
+
+  vertical-align: middle;
+
+
+  }
+    .butt{
+
+     border: 5px solid black;
+	 
+     font-size: 150%;
+
+  color : black;
+
+  text-align: center;
+
+  border-radius: 25%;
+
+  width: 19%;
+
+  vertical-align: middle;
+
+
+  }
+
+ .butt3{
+
+     border: 5px solid red;
+
+     font-size: 150%;
+
+  color : black;
+
+  text-align: center;
+
+  border-radius: 25%;
+
+  width: 19%;
+
+  vertical-align: middle;
+
+  }
+
+  .butt3{
+
+     border: 5px solid black;
+
+     font-size: 150%;
+
+  text-align: center;
+
+  color : black;
+
+  border-radius: 25%;
+
+  width: 8%;
+
+  vertical-align: middle;
+
+  } 
+
+  .btn-group{
+
+     border: 2px solid pink;
+
+     font-size: 100%;
+
+  text-align: left;
+
+  color : red;
+
+  width: 100%;
+
+  vertical-align: middle;
+
+  }
+
+   .btn-group2{
+
+     border: 2px solid red;
+
+     font-size: 100%;
+
+  text-align: center;
+
+  color : red;
+
+  width:5%;
+
+  vertical-align: left;
+
+  }
+
+   .btn-group3{
+
+     border: 2px solid #DFDF50;
+
+     font-size: 100%;
+
+  color : purple;
+
+  width: 100%;
+
+  
+
+  }
+
+ li {
+  display: inline;
+} 
+fp{
+font-size: 50%;
+}
+
+#ם {background-color:#DFDF50;}
+#Ѫ {background-color:red;}
+#ф {background-color:green;}
+#⇧ {background-color:blue;}
+</style>
+
+
+
+</head>
+
+<body>
+<div id="ם" class="tabcontent">
+  <h1>ם-shielding</h1>
+  <button class="text">Blocks heat up to its rating </br>
+     of (100^rank*4)/rank<br>	<br> 
+	                  
+	 </button><br> 
+  <button class="butt3" onclick = "mode = &quot wall &quot ; cost = 1; rank = 1;">ם<br> <fp>rank:1<br> 
+                                                                        cost:1</fp></button>
+  <button class="butt3" onclick = "mode = &quot wall &quot ; cost = 1000; rank = 2;">ם<br> <fp>rank:2<br> 
+                                                                        cost:1k</fp></button>
+  <button class="butt3" onclick = "mode = &quot wall &quot ; cost = 1000000; rank = 3;">ם<br> <fp>rank:3<br> 
+                                                                        cost:1m</fp></button>
+  <button class="butt3" onclick = "mode = &quot wall &quot ; cost = 1000000000; rank = 4;">ם<br> <fp>rank:4<br> 
+                                                                        cost:1b</fp></button>
+  <button class="butt3" onclick = "mode = &quot wall &quot ; cost = 1000000000000; rank = 5;">ם<br> <fp>rank:5<br> 
+                                                                        cost:1t</fp></button>
+  <button class="butt3" onclick = "mode = &quot wall &quot ;   cost = 1000000000000000; rank = 6;">ם<br> <fp>rank:6<br> 
+                                                                        cost:1q</fp></button>
+  <button class="butt3" onclick = "mode = &quot wall &quot ; cost = 1000000000000000000; rank = 7;">ם<br> <fp>rank:7<br> 
+                                                                        cost:1Q</fp></button>
+  <button class="butt3" onclick = "mode = &quot wall &quot ; cost = 1000000000000000000000; rank = 8;">ם<br> <fp>rank:8<br> 
+                                                                        cost:1s</fp></button>
+  <button class="butt3" onclick = "mode = &quot wall &quot ; cost = 1000000000000000000000000; rank = 9;">ם<br> <fp>rank:9<br> 
+                                                                        cost:1S</fp></button>
+  <button class="butt3" onclick = "mode = &quot wall &quot ; cost = 1000000000000000000000000000; rank = 10;">ם<br> <fp>rank:A<br> 
+                                                                        cost:1o</fp></button>																	
+</div>
+
+<div id="Ѫ" class="tabcontent">
+  <h1>Ѫ-reactors</h1>
+     <button class="text">Makes heat at a rate of <br>
+      heat * (100^rank - |100^rank - heat|) / 100^rank  per tick</br>
+	  When heat > 100^rank it fails</button><br> 
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1; rank = 1;">Ѫ<br> <fp>rank:1<br> 
+                                                                        cost:1</fp></button>
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1000; rank = 2;">Ѫ<br> <fp>rank:2<br> 
+                                                                        cost:1k</fp></button>
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1000000; rank = 3;">Ѫ<br> <fp>rank:3<br> 
+                                                                        cost:1m</fp></button>
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1000000000; rank = 4;">Ѫ<br> <fp>rank:4<br> 
+                                                                        cost:1b</fp></button>
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1000000000000; rank = 5;">Ѫ<br> <fp>rank:5<br> 
+                                                                        cost:1t</fp></button>
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1000000000000000; rank = 6;">Ѫ<br> <fp>rank:6<br> 
+                                                                        cost:1q</fp></button>
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1000000000000000000; rank = 7;">Ѫ<br> <fp>rank:7<br> 
+                                                                        cost:1Q</fp></button>
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1000000000000000000000; rank = 8;">Ѫ<br> <fp>rank:8<br> 
+                                                                        cost:1s</fp></button>
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1000000000000000000000000; rank = 9;">Ѫ<br> <fp>rank:9<br> 
+                                                                        cost:1S</fp></button>
+  <button class="butt3" onclick = "mode = &quot reactor &quot ; cost = 1000000000000000000000000000; rank = 10;">Ѫ<br> <fp>rank:A<br> 
+                                                                        cost:1o</fp></button>																	
+</div>
+
+<div id="ф" class="tabcontent">
+  <h1>ф-dynamoes</h1>
+  <button class="text">Converts heat into money at a rate of <br>
+      heat * (100^rank - |100^rank - heat|) / 100^rank  per tick<br> 
+	  When heat > 100^rank it fails</button><br> 
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1; rank = 1;">ф <br> <fp>rank:1<br> 
+                                                                        cost:1</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000; rank = 2;">ф <br> <fp>rank:2<br> 
+                                                                        cost:1k</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000; rank = 3;">ф <br> <fp>rank:3<br>
+                                                                        cost:1m
+                                                                        </fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000; rank = 4;">ф <br> <fp>rank:4<br>
+                                                                        cost:1b</fp></button> 
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000; rank = 5;">ф <br> <fp>rank:5<br>
+                                                                        cost:1t</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000; rank = 6;">ф <br> <fp>rank:6<br> 
+                                                                        cost:1q</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000000; rank = 7;">ф <br> <fp>rank:7<br> 
+                                                                        cost:1Q</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000000000; rank = 9;">ф <br> <fp>rank:8<br>
+                                                                        cost:1s
+                                                                        </fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000000000000; rank = 10;">ф <br> <fp>rank:9<br>
+                                                                        cost:1S</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000000000000000; rank = 11;">ф <br> <fp>rank:A<br>
+                                                                        cost:1o</fp></button>																
+</div>
+
+<div id="⇧" class="tabcontent">
+  <h1>⇧-Pumps</h1>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1; rank = 1;">ф <br> <fp>rank:1<br> 
+                                                                        cost:1</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000; rank = 2;">ф <br> <fp>rank:2<br> 
+                                                                        cost:1k</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000; rank = 3;">ф <br> <fp>rank:3<br>
+                                                                        cost:1m
+                                                                        </fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000; rank = 4;">ф <br> <fp>rank:4<br>
+                                                                        cost:1b</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000; rank = 5;">ф <br> <fp>rank:5<br>
+                                                                        cost:1t</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000; rank = 6;">ф <br> <fp>rank:6<br> 
+                                                                        cost:100</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000000; rank = 7;">ф <br> <fp>rank:7<br> 
+                                                                        cost:1k</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000000000; rank = 9;">ф <br> <fp>rank:8<br>
+                                                                        cost:1m</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000000000000; rank = 10;">ф <br> <fp>rank:9<br>
+                                                                        cost:1b</fp></button>
+  <button class="butt3" onclick = "mode = &quot dynamo &quot ; cost = 1000000000000000000000000000; rank = 11;">ф <br> <fp>rank:A<br>
+                                                                        cost:1t</fp></button>																	
+</div>
+
+<button class="tablink" onclick="opentab('ם', this, '#DFDF50')" id="defaultOpen">ם</button>
+<button class="tablink" onclick="opentab('Ѫ', this, 'red')">Ѫ</button>
+<button class="tablink" onclick="opentab('ф', this, 'green')">ф</button>
+<button class="tablink" onclick="opentab('⇧', this, 'blue')">⇧</button>
+<p id="coords">coords</p>
+
+<p id="stats"> GO HERE</p>
+
+
+
+<div class="btn-group">
+  <button id = "heat" class="butt3";>1</button>
+  <button id = "dosh" class="butt3";>0</button><br>
+  <button class="button" onclick = "mode = &quot sell &quot">
+     <div class="tooltip">$<span class="tooltiptext">Sell Gear</span></div></button>
+  <button class="button" onclick = "reset()" >
+     <div class="tooltip">↻<span class="tooltiptext">Reset the Game</span></div></button>
+  <button class="button" onclick = "merge();">
+     <div class="tooltip">۞<span class="tooltiptext">Consolidate your Waste</span></div></button>
+
+  
+  
+
+
+
+
+</div>
+
+<canvas id="myCanvas" width="800" height="900" style="border:1px solid #d3d3d3;" onclick="MouseClick(event)" onmousemove="MouseOver(event)">Your browser does not support the HTML5 canvas tag.</canvas>
+
+<p id="map">MAP GOES HERd</p>
+
+
+
+-----------------------
+
+</body>
+
+ <script>
+
+var c = document.getElementById("myCanvas");
+
+var ctx = c.getContext("2d");
+
+ var out;
+
+ var pheno;
+
+ var S = 1600;
+
+ var W = 40;
+
+ var HEAT = 0;
+
+ var cells = [];
+
+ var gear = [];
+
+ var mode = "wall";
+
+  for(var i = 0; i <= S; i++){cells.push({Heat:0,nextHeat:0,wall:false,P:0});}
+var cost = 100;
+var rank = 1;
+
+var power = 1;
+
+var peak = 0;
+
+var dosh = 25;
+
+var steps = 0;
+
+var inv = "";
+
+var fuel = {rank:0,style:0};
+
+var count = 0;
+
+   setInterval(step, 250);
+
+   var t = 0;
+
+ // setup map
+//gear.push({loc:3+W,type:" wall ",rank:100});
+//gear.push({loc:3+W*2,type:" wall ",rank:100});
+/*
+ctx.fillStyle=color (50,50,50); 
+ctx.fillRect(1,1,60,60);
+for(var i = W; i < 2 * W; i++)
+
+  {
+
+  gear.push({loc:i+W*2,type:" wall ",rank:100});
+
+}*/
+function reset()
+{
+dosh -= HEAT;
+if (dosh < 0){dosh = 25;} 
+ HEAT = 0;
+ cells = [];
+ gear = [];
+ mode = "wall";
+ for(var i = 0; i <= S; i++){cells.push({Heat:0,nextHeat:0,wall:false,P:0});}
+ 
+ steps = 0;
+  inv = "";
+ count = 0;
+}
+function numbr(num)
+{
+if(num < 10000) return (num).toFixed(2);
+if(num < 1000000) return (num / 1000).toFixed(2) + "K";
+if(num < 1000000000) return (num / 1000000).toFixed(2) + "m";
+if(num < 1000000000000) return (num / 1000000000).toFixed(2) + "B";
+if(num < 1000000000000000) return (num / 1000000000000).toFixed(2) + "T";
+if(num < 1000000000000000000) return (num / 1000000000000000).toFixed(2) + "q";
+if(num < 1000000000000000000000) return (num / 1000000000000000000).toFixed(2) + "Q";
+if(num < 1000000000000000000000000) return (num / 1000000000000000000000).toFixed(2) + "s";
+if(num < 1000000000000000000000000000) return (num / 1000000000000000000000000).toFixed(2) + "s";
+return "too big"; 
+}
+function step()
+
+   {
+
+   ctx.font = "20px Arial";
+
+   steps++;
+
+    document.getElementById("stats").innerHTML = "#" + steps + "$" + dosh + "[" + HEAT + "]-"+cost+mode;
+    document.getElementById("dosh").innerHTML = "$" + (numbr(dosh));
+	document.getElementById("heat").innerHTML = "💢" + (numbr(HEAT));
+    document.getElementById("map").innerHTML = showgear();
+
+ /// HEAT FLOW
+
+
+
+    var C = 0;
+
+ HEAT = 0;
+
+ try{
+
+  for(var j = 0; j < S; j++){
+
+                            cells[j].Heat += cells[j].nextHeat;
+
+          cells[j].nextHeat = 0;
+
+          HEAT += cells[j].Heat; //total heat sensor
+
+          }
+
+ for(var i = S; i > 0; i--){
+
+                          // if (i%W != 0 && i%W != W-1  && i > W && i < 1600 - W)
+            
+             if(i%W == W-1 || i%W == 0 || i < W || i > 1600 - W) // the border
+              {
+			  if(cells[i].Heat > .01) {reset();}
+              }	
+             else	
+           {	  
+           C = 0;
+
+           if (!cells[i-1].wall && cells[i].Heat > cells[i-1].Heat ){C++;}
+
+           if (!cells[i+1].wall && cells[i].Heat > cells[i+1].Heat){C++;}
+
+           if (!cells[i-W].wall && cells[i].Heat > cells[i-W].Heat){C++;}
+
+           if (!cells[i+W].wall && cells[i].Heat > cells[i+W].Heat){C++;}       
+
+           var diff = cells[i].Heat;
+
+             // if ((cells[i].Heat - diff / 10) >= 0)
+
+           {
+
+           if (!cells[i-1].wall && cells[i].Heat > cells[i-1].Heat){cells[i-1].nextHeat += diff / C / 10;  cells[i].nextHeat -= diff / C / 10;}
+
+           if (!cells[i+1].wall && cells[i].Heat > cells[i+1].Heat){cells[i+1].nextHeat += diff / C / 10; cells[i].nextHeat -= diff / C / 10;}
+
+           if (!cells[i-W].wall && cells[i].Heat > cells[i-W].Heat){cells[i-W].nextHeat += diff / C / 10; cells[i].nextHeat -= diff / C / 10;}
+
+           if (!cells[i+W].wall && cells[i].Heat > cells[i+W].Heat){cells[i+W].nextHeat += diff / C / 10; cells[i].nextHeat -= diff / C / 10;}
+
+
+                                   } //else {alert("At diffusion the heat of cell " + i + " is " + cells[i].Heat);}        
+
+         }
+
+        }
+
+     
+
+   }
+
+   catch(err){alert("flow error"+ err.message);}
+
+
+
+//DRAW THE REACTOR (ctx)
+
+try
+
+{
+//Start with the workshop
+
+for(var i = 0; i < S; i++)
+
+  {
+
+  if (cells[i].Heat > 0)
+
+  ctx.fillStyle=color (max(cells[i].Heat),max(Math.pow(cells[i].Heat,0.5)),max(Math.pow(cells[i].Heat,0.33)));
+
+  else
+
+  ctx.fillStyle=color (0,max(Math.abs(cells[i].Heat)),0);
+
+  ctx.fillRect((20 * (i%40)),Math.floor(i/40)*20,19,19);
+
+  }
+
+  inv = "";
+
+  for(var i = 0; i < gear.length; i++)
+
+   {
+
+
+   cells[gear[i].loc].wall = false;
+   if (gear[i].type == "fuel"){
+
+                              ctx.fillStyle = fuelColor (gear[i].type);
+
+                                 ctx.fillText("✸",(20 * (gear[i].loc%40))+2,Math.floor(gear[i].loc/40)*20+16);
+
+                                 }
+
+     if (gear[i].type == "fuelshard"){
+
+                              ctx.fillStyle = fuelColor (gear[i].type);
+
+                                 ctx.fillText("▾",(20 * (gear[i].loc%40))+2,Math.floor(gear[i].loc/40)*20+16);
+
+                                 } 
+
+     if (gear[i].type == " wall ") {
+
+                              if (neighborHeat(gear[i].loc) < (gear[i].P * 4 / gear[i].rank))
+
+          {
+            var R = gear[i].rank;
+            ctx.fillStyle = color ( 64-(R*8),32-(R*16),Math.pow(2,R))
+
+           cells[gear[i].loc].wall = true;
+            ctx.fillRect((20 * (gear[i].loc%40)),Math.floor(gear[i].loc/40)*20,19,19);
+          }
+
+         else
+
+         {
+
+         cells[gear[i].loc].wall = false;
+
+         }
+
+
+         }
+
+        
+
+ if (gear[i].type == " reactor ") {
+
+        cells[gear[i].loc].wall =  false;
+
+        ctx.fillStyle = color(gear[i].rank*32, (gear[i].rank-1)*(gear[i].rank-1)*16, (gear[i].rank - 2) * (gear[i].rank - 2));
+
+        //set heat heat + (heat + 1) * ((P - abs (P - heat)+ 1)/ P) / 2
+          
+		  var change = (cells[gear[i].loc].Heat + 1) * ((gear[i].P - Math.abs (gear[i].P - cells[gear[i].loc].Heat) + 1)/gear[i].P)/2;
+		  if (change > 0) {cells[gear[i].loc].Heat += change;}   
+         //cells[gear[i].loc].Heat += gear[i].P / (1 +  Math.abs (gear[i].peak - cells[gear[i].loc].Heat));
+
+         if(gear[i].life%2 ==0)
+
+         ctx.fillText("Ѫ",(20 * (gear[i].loc%40))+2,Math.floor(gear[i].loc/40)*20+16);
+
+          else
+
+         ctx.fillText("ѫ",(20 * (gear[i].loc%40))+4,Math.floor(gear[i].loc/40)*20+14);
+
+                             gear[i].life--;
+
+           if (gear[i].life < 0 ){gear[i].loc = minfree(); gear[i].type = "fuelshard"; if (gear[i].style < 6) gear[i].style++;}
+
+         } 
+
+ if (gear[i].type == " dynamo ") {
+
+                                 ctx.fillStyle = color ( 512 - gear[i].rank * 64 ,gear[i].rank * 32, 512 - gear[i].rank * 64);
+
+          ctx.fillText("ф",(20 * (gear[i].loc%40))+1,Math.floor(gear[i].loc/40)*20+15);
+
+     //   set D heat * ((P - abs (P - heat))/ P)
+     //   set erg erg + D ^ .5
+     //   set heat heat - D
+	 var heat = cells[gear[i].loc].Heat ;
+	 var P = Math.pow(100,gear[i].rank); 
+     var D = heat * ((P - Math.abs(P - heat))/ P);
+	 if (D<0){gear[i].type = "trash";}
+	 else{
+         dosh += Math.pow(D,0.5);
+	     cells[gear[i].loc].Heat -= D;} 
+       } 
+
+        
+
+    if (gear[i].type == "trash"){
+								 gear[i].loc = 1;
+                                 ctx.fillText("X",(20 * (gear[i].loc%40))+2,Math.floor(gear[i].loc/40)*20+16);
+
+                                 }       
+
+    }
+ctx.font = "60px Verdana"; 
+ctx.fillStyle = color(228,228,128);
+ctx.fillText("Ѫ",5,50);
+   }catch(err){alert("object error" + err.message);}
+
+ 
+
+   }
+
+ function neighborHeat(num)
+
+ {
+
+ return cells[num].Heat + cells[num+1].Heat+ cells[num-1].Heat+ cells[num+W].Heat+ cells[num-W].Heat;
+
+ }
+
+ function max(input)
+
+ {
+
+  if (input > 256) {return 256;}
+
+  if (input < 0) {return 0;}
+
+  else
+
+  return input;
+
+ }
+
+ function getMousePos(canvas, evt) {
+
+    var rect = canvas.getBoundingClientRect();
+
+    return {
+
+      x: evt.clientX - rect.left,
+
+      y: evt.clientY - rect.top
+
+    };
+
+}
+
+
+
+function minfree()
+
+  {
+
+  for(var j = 4; j < S; j++)
+
+    {
+
+ if (gearAt(j) == -1)
+
+    return j;
+
+ }
+
+ return -1;
+
+  }
+
+
+
+ function MouseClick(event) {
+
+    try{
+
+ var c = document.getElementById("myCanvas");
+
+    var ctx = c.getContext("2d");
+
+    var rect = c.getBoundingClientRect();}
+
+ catch(err){alert("click error" + err.message);}
+
+ 
+
+    var x = Math.floor((event.clientX-rect.left)/20);
+
+    var y = Math.floor((event.clientY-rect.top)/20);
+
+    var coords = "X coords: " + x + ", Y coords: " + y;
+
+ var num = W * y  + x;
+
+ if(mode == " shunt ")
+
+  {
+
+  cells[num].Heat += 256;
+
+  }
+
+  else
+
+  if (mode == " gather " )
+
+  {
+
+  gear[gearAt(num)].loc = minfree();
+
+  }
+
+  else
+
+  if (mode == " sell " )
+
+  {
+
+  gear[gearAt(num)].type = "trash";
+  //cells[gear[i].loc].wall = false;
+  dosh+=gear[gearAt(num)].cost * 0.75;
+
+  //gear[gearAt(num)].loc = -1;
+
+  }
+
+  else
+
+   if (mode == " setFuel " )
+
+  {
+
+  gear[gearAt(num)].type = "trash";
+
+  fuel.style = gear[gearAt(num)].style;
+
+
+
+  document.getElementById("FUEL").innerHTML = fuel.style;
+
+  
+
+  }
+
+  else
+
+   if (mode == " setFocus " )
+
+  {
+
+  gear[gearAt(num)].type = "trash";
+
+  fuel.focus = gear[gearAt(num)].rank;
+
+  document.getElementById("FOCUS").innerHTML = fuel.pow;
+
+  
+
+  }
+
+  else
+
+ if(gearAt(num)==-1 && dosh >= cost) //100 Will be replaced by a fucnction of type rank pow and peak
+
+    {
+
+  
+
+      {
+
+       dosh -=cost;
+
+       gear.push({loc:num,
+
+              type:mode,
+
+     life:1000 * rank ,
+     style:1,
+	 rank:rank,
+     P:Math.pow(100,rank),
+     cost:cost});
+
+     }
+
+    }
+
+  
+
+ 
+
+}
+
+
+function MouseOver() {
+
+    try{
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      var rect = c.getBoundingClientRect();}
+          catch(err){alert("mouseover error" + err.message);}
+
+    var x = Math.floor((event.clientX-rect.left)/20);
+    var y = Math.floor((event.clientY-rect.top)/20);
+    var coords = "X coords: " + x + ", Y coords: " + y;
+    var num = W * y  + x;
+  document.getElementById("coords").innerHTML = coords + " " + num + " " + cells[num].Heat;
+}
+
+
+function POW(style,rank)
+
+ {
+
+
+
+ switch(style)
+
+   {
+
+   case 0: return 128;
+
+   case 1: return 256;
+
+   case 2: return 16384;
+
+   case 3: return 65536;
+
+   case 4 : return 16777216;
+
+   }
+
+ }
+
+
+
+function gearAt(num)
+
+  {
+
+for(var i = 0; i < gear.length; i++)
+
+   {
+
+   if (gear[i].loc == num){return i;}
+
+   }
+
+   return -1;
+
+  }
+
+  function showgear()
+
+    {
+
+ var out = "";
+
+ for(var i = 0; i < gear.length; i++)
+
+   {
+
+   out  += gear[i].type;
+
+ }
+
+ return out;
+
+ }
+
+
+
+
+
+  function merge(){
+
+   var count = 0;
+
+   for(var i = 0; i < gear.length; i++) //count fuelshard shards of type in inventory
+
+           {
+
+            if(gear[i].type == "fuelshard")
+
+      {
+
+       count++;
+
+    gear[i].type = "trash"; gear[i].loc = 1;
+
+                }    
+
+         
+
+     if (count >= 10)
+
+      {
+
+            gear.push({loc:minfree(),type:"fuel",rank:rank,P:power,peak:peak,style:gear[i].style,cost:2000});
+
+
+   return 1;
+
+   }
+
+  }
+
+   }
+
+ function color (r, g, b){
+
+  return "rgb(" + r + "," + g + "," + b + ")";}
+
+
+
+ function fuelColor(input)
+
+   {
+
+   switch(input)
+
+     {
+
+  case -1:return "rgb(10,10,10)"; //black
+
+  case 0: return "rgb(236,10,10)"; //red
+
+  case 1: return "rgb(164,82,10)"; //orange
+
+  case 2: return "rgb(123,123,10)"; //amber
+
+  case 3: return "rgb(10,236,10)"; //green
+
+  case 4: return "rgb(123,10,123)"; //magenta
+
+  case 5: return "rgb(10,10,236)"; //blue
+
+  }
+
+   }
+function opentab(tabName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(tabName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+ </script>
